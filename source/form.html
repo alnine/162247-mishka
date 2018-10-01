@@ -33,7 +33,69 @@
       </div>
     </header>
 
-    <main></main>
+    <main class="inner-page__main">
+      <header class="inner-page__main-header">
+        <h1 class="inner-page__main-header-wrapper main-title">Вязание на заказ</h1>
+      </header>
+      <section class="inner-page__main-content">
+        <div class="inner-page__main-content-wrapper order-form">
+          <p class="order-form__invite">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form class="order-form__list" action="https://echo.htmlacademy.ru" method="post">
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">Тип</h3>
+              <label for="type-acc">
+                <input type="radio" name="type" value="acc" id="type-acc">
+                Аксессуар для интерьера
+              </label>
+              <label for="type-toy">
+                <input type="radio" name="type" value="toy" id="type-toy">
+                Детская игрушка
+              </label>
+            </div>
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">Цвет</h3>
+              <input id="color-white" type="checkbox" name="color" value="white" checked>
+              <label for="color-white">Белый</label>
+              <input id="color-gray" type="checkbox" name="color" value="gray" checked>
+              <label for="color-gray">Серый</label>
+              <input id="color-tiff" type="checkbox" name="color" value="tiff">
+              <label for="color-tiff">&laquo;Тиффани&raquo;</label>
+              <input id="color-black" type="checkbox" name="color" value="black">
+              <label for="color-black">Черный</label>
+              <input id="color-pink" type="checkbox" name="color" value="pink">
+              <label for="color-pink">Розовый</label>
+              <input id="color-orange" type="checkbox" name="color" value="orange">
+              <label for="color-orange">Оранжевый</label>
+            </div>
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">ФИО</h3>
+              <label for="first-name">Имя:</label>
+              <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+              <label for="surname">Фамилия:</label>
+              <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+              <label for="second-name">Отчество:</label>
+              <input id="second-name" type="text" name="second-name" placeholder="Отчество, если желаете">
+            </div>
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">Тел</h3>
+              <input type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+            </div>
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">E-mail</h3>
+              <input type="email" name="email" placeholder="Ваш Email*" required>
+            </div>
+            <div class="order-form__item">
+              <h3 class="order-form__item-title">Доп</h3>
+              <textarea name="message" cols="20" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
+            <small class="order-form__legend">
+              <sup>*</sup>Поля обязательны для заполнения
+            </small>
+            <button class="btn order-form__btn" type="submit">Отправить заказ</button>
+          </form>
+        </div>
+      </section>
+    </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
