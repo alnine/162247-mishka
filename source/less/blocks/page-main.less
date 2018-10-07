@@ -6,9 +6,17 @@
   background-color: #f9f9f9;
 }
 
+.page-main__promo,
+.page-main__advantages,
+.page-main__reviews,
+.page-main__contacts,
+.page-main__catalog {
+  background-color: @bg-main-sections;
+}
+
 .page-main__header {
-  padding-top: 72px;
-  padding-bottom: 120px;
+  padding-top: 70px;
+  padding-bottom: 76px;
 }
 
 .page-main__header-title {
@@ -17,6 +25,10 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
+}
+
+.page-main__product-nav {
+  margin-top: 46px;
 }
 
 .page-main__product-nav-list {
@@ -67,11 +79,4 @@
   &--icon--toy::after {
     background-image: url("../img/icon-toy.svg");
   }
-}
-
-.page-main__promo,
-.page-main__advantages,
-.page-main__reviews,
-.page-main__contacts {
-  background-color: @bg-main-sections;
 }
