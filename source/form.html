@@ -48,50 +48,50 @@
           <p class="order-form__invite">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <form class="order-form__list" action="https://echo.htmlacademy.ru" method="post">
             <div class="order-form__item">
-              <h3 class="order-form__item-title">Тип</h3>
-              <input id="type-acc" type="radio" name="type" value="acc">
-              <label for="type-acc">Аксессуар для интерьера</label>
-              <input id="type-toy" type="radio" name="type" value="toy">
-              <label for="type-toy">Детская игрушка</label>
+              <h3 class="order-form__item-title order-form__item-title--middle-size">Тип</h3>
+              <input class="order-form__item-input-radio" id="type-acc" type="radio" name="type" value="acc" checked>
+              <label class="order-form__item-label order-form__item-label--radio" for="type-acc">Аксессуар для интерьера</label>
+              <input class="order-form__item-input-radio" id="type-toy" type="radio" name="type" value="toy">
+              <label class="order-form__item-label order-form__item-label--radio" for="type-toy">Детская игрушка</label>
             </div>
             <div class="order-form__item">
-              <h3 class="order-form__item-title">Цвет</h3>
-              <input id="color-white" type="checkbox" name="color" value="white" checked>
-              <label for="color-white">Белый</label>
-              <input id="color-gray" type="checkbox" name="color" value="gray" checked>
-              <label for="color-gray">Серый</label>
-              <input id="color-tiff" type="checkbox" name="color" value="tiff">
-              <label for="color-tiff">&laquo;Тиффани&raquo;</label>
-              <input id="color-black" type="checkbox" name="color" value="black">
-              <label for="color-black">Черный</label>
-              <input id="color-pink" type="checkbox" name="color" value="pink">
-              <label for="color-pink">Розовый</label>
-              <input id="color-orange" type="checkbox" name="color" value="orange">
-              <label for="color-orange">Оранжевый</label>
+              <h3 class="order-form__item-title order-form__item-title--middle-size">Цвет</h3>
+              <input class="order-form__item-input-checkbox" id="color-white" type="checkbox" name="color" value="white" checked>
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-white">Белый</label>
+              <input class="order-form__item-input-checkbox" id="color-gray" type="checkbox" name="color" value="gray" checked>
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-gray">Серый</label>
+              <input class="order-form__item-input-checkbox" id="color-tiff" type="checkbox" name="color" value="tiff">
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-tiff">&laquo;Тиффани&raquo;</label>
+              <input class="order-form__item-input-checkbox" id="color-black" type="checkbox" name="color" value="black">
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-black">Черный</label>
+              <input class="order-form__item-input-checkbox" id="color-pink" type="checkbox" name="color" value="pink">
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-pink">Розовый</label>
+              <input class="order-form__item-input-checkbox" id="color-orange" type="checkbox" name="color" value="orange">
+              <label class="order-form__item-label order-form__item-label--checkbox" for="color-orange">Оранжевый</label>
             </div>
             <div class="order-form__item">
-              <h3 class="order-form__item-title">ФИО</h3>
-              <label for="first-name">Имя:</label>
-              <input id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
-              <label for="surname">Фамилия:</label>
-              <input id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-              <label for="second-name">Отчество:</label>
-              <input id="second-name" type="text" name="second-name" placeholder="Отчество, если желаете">
+              <h3 class="order-form__item-title order-form__item-title--high-size">ФИО</h3>
+              <label class="order-form__item-label order-form__item-label--input" for="first-name">Имя:</label>
+              <input class="order-form__item-input" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+              <label class="order-form__item-label order-form__item-label--input" for="surname">Фамилия:</label>
+              <input class="order-form__item-input" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+              <label class="order-form__item-label order-form__item-label--input" for="second-name">Отчество:</label>
+              <input class="order-form__item-input" id="second-name" type="text" name="second-name" placeholder="Отчество, если желаете">
             </div>
             <div class="order-form__item">
-              <h3 class="order-form__item-title">Тел</h3>
-              <input type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
+              <h3 class="order-form__item-title order-form__item-title--default-size">Тел</h3>
+              <input class="order-form__item-input order-form__item-input--icon--phone" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*" required>
             </div>
             <div class="order-form__item">
-              <h3 class="order-form__item-title">E-mail</h3>
-              <input type="email" name="email" placeholder="Ваш Email*" required>
+              <h3 class="order-form__item-title order-form__item-title--default-size order-form__item-title--shorter-line">E-mail</h3>
+              <input class="order-form__item-input order-form__item-input--icon--email" type="email" name="email" placeholder="Ваш Email*" required>
             </div>
             <div class="order-form__item">
-              <h3 class="order-form__item-title">Доп</h3>
-              <textarea name="message" cols="20" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+              <h3 class="order-form__item-title order-form__item-title--middle-size">Доп</h3>
+              <textarea class="order-form__item-textarea" name="message" cols="20" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
             <small class="order-form__legend">
-              <sup>*</sup>Поля обязательны для заполнения
+              *Поля обязательны для заполнения
             </small>
             <button class="btn order-form__btn" type="submit">Отправить заказ</button>
           </form>
