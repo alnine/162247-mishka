@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
 
@@ -11,7 +13,7 @@
         <div class="page-header__logo logo">
           <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
         </div>
-        <button class="page-header__nav-toggle menu-toggle">Открыть меню</button>
+        <button class="page-header__nav-toggle menu-toggle menu-toggle--hidden">Открыть меню</button>
         <nav class="page-header__main-nav main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -25,17 +27,17 @@
         <nav class="page-header__service-nav service-nav">
           <ul class="service-nav__list">
             <li class="service-nav__item">
-              <a class="service-nav__item-link" href="#">Поиск по сайту</a>
+              <a class="service-nav__item-link service-nav__item-link--icon-search" href="#">Поиск по сайту</a>
             </li>
             <li class="service-nav__item">
-              <a class="service-nav__item-link" href="#">Корзина: пока пуста</a>
+              <a class="service-nav__item-link service-nav__item-link--icon-cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--bg">
       <header class="page-main__header">
         <div class="container">
           <h1 class="page-main__header-title">Милые штуки<br>ручной<br>работы для дома</h1>
@@ -45,10 +47,10 @@
         <div class="container">
           <ul class="page-main__product-nav-list">
             <li class="page-main__product-nav-item">
-              <a class="page-main__product-nav-link" href="#">Предметы<br>интерьера</a>
+              <a class="page-main__product-nav-link page-main__product-nav-link--bg--seafoam-blue page-main__product-nav-link--icon--interior" href="#">Предметы<br>интерьера</a>
             </li>
             <li class="page-main__product-nav-item">
-              <a class="page-main__product-nav-link" href="#">Детские<br>игрушки</a>
+              <a class="page-main__product-nav-link page-main__product-nav-link--bg--greeny-blue page-main__product-nav-link--icon--toy" href="#">Детские<br>игрушки</a>
             </li>
           </ul>
         </div>
@@ -98,7 +100,7 @@
             <li class="advantages__item advantages__item--rocket">
               <p class="advantages__item-text">Поддержка отечественного<br>производителя</p>
             </li>
-            <li class="advantages__item advantages__item--present">
+            <li class="advantages__item advantages__item--gift">
               <p class="advantages__item-text">Поставляется в<br>подарочной упаковке</p>
             </li>
           </ul>
@@ -128,7 +130,7 @@
             <table class="contacts__details">
               <tr>
                 <td class="contacts__info-field">e-mail:</td>
-                <td class="contacts__info-value"><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+                <td class="contacts__info-value contacts__info-value--underline"><a class="contacts__info-mail-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
               </tr>
               <tr>
                 <td class="contacts__info-field">адрес:</td>
@@ -167,16 +169,16 @@
         </div>
       </div>
 
-      <div class="modal">
+      <div class="page__modal modal">
         <h2 class="modal__title">Добавить<br>в корзину</h2>
         <p class="modal__invite">Выберите размер:</p>
         <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="size-s">S</label>
-          <input id="size-s" type="radio" name="size" value="s" >
-          <label for="size-m">M</label>
-          <input id="size-m" type="radio" name="size" value="m" >
-          <label for="size-l">L</label>
-          <input id="size-l" type="radio" name="size" value="l" >
+          <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
+          <label class="modal__label" for="size-s">S</label>
+          <input class="modal__input" id="size-m" type="radio" name="size" value="m" >
+          <label class="modal__label" for="size-m">M</label>
+          <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
+          <label class="modal__label" for="size-l">L</label>
           <button class="btn modal__btn" type="submit">Добавить</button>
         </form>
       </div>
