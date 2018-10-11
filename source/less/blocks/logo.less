@@ -1,12 +1,18 @@
 .logo {
-  display: block;
-  padding: 22px 0;
-  border-bottom: 1px solid @header-border-color;
+  display: flex;
+  align-items: center;
+  width: 86px;
+  height: 79px;
 }
 
 .logo__image {
-  display: block;
-  margin: 0 auto;
-  width: 86px;
-  height: 35px;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .logo {
+    width: 112px;
+    height: 88px;
+  }
 }
