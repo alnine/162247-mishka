@@ -30,11 +30,16 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
     margin-right: 37px;
     border: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__item-link {
