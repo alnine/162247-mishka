@@ -1,10 +1,13 @@
 .advantages__wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 32px 30px;
+  padding-bottom: 29px;
 }
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   padding: 0;
   font-weight: bold;
   font-size: 25px;
@@ -12,53 +15,56 @@
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .advantages__item {
-  position: relative;
-  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 95px;
   margin-bottom: 28px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &::before {
-    content: "";
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 55px;
-    height: 55px;
-    background-repeat: no-repeat;
+.advantages__item-icon {
+  fill: @advantages-icon-color;
+
+  &--flower {
+    width: 32px;
+    height: 37px;
   }
 
-  &--flower::before {
-    background-image: url("../img/icon-feature-flower.svg");
+  &--money {
+    width: 47px;
+    height: 27px;
   }
 
-  &--money::before {
-    background-image: url("../img/icon-feature-money.svg");
+  &--heart {
+    width: 34px;
+    height: 27px;
   }
 
-  &--heart::before {
-    background-image: url("../img/icon-feature-heart.svg");
+  &--ball {
+    width: 34px;
+    height: 34px;
   }
 
-  &--ball::before {
-    background-image: url("../img/icon-feature-ball.svg");
+  &--rocket {
+    width: 54px;
+    height: 23px;
   }
 
-  &--rocket::before {
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
-
-  &--gift::before {
-    background-image: url("../img/icon-feature-gift.svg");
+  &--gift {
+    width: 33px;
+    height: 32px;
   }
 }
 
@@ -68,4 +74,54 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    padding: 65px 50px;
+  }
+
+  .advantages__title {
+    margin-left: -3px;
+    margin-bottom: 49px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .advantages__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 50%;
+    height: 97px;
+    margin-bottom: 59px;
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
+    }
+
+    &--money {
+      order: 1;
+    }
+
+    &--rocket {
+      order: 2;
+    }
+
+    &--heart {
+      order: 3;
+    }
+
+    &--gift {
+      order: 4;
+    }
+  }
+
+  .advantages__item-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
