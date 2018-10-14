@@ -161,12 +161,20 @@
               <cite class="reviews__item-autor">Анастасия Красильникова</cite>
               <address class="reviews__item-contact">@misssssiskras</address>
             </blockquote>
+            <div class="reviews__controls slider__controls">
+              <button class="slider__control slider__control--left">
+                <svg class="slider__control-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="26">
+                  <path d="M50 11.002H7.659l8.174-8.174L13.005 0 0 12.998l.003.003-.003.004 13.005 12.998 2.828-2.828-8.172-8.173H50z"/>
+                </svg>
+              </button>
+              <button  class="slider__control slider__control--right">
+                <svg class="slider__control-icon" xmlns="http://www.w3.org/2000/svg" width="50" height="26">
+                  <path d="M0 11.002h42.341l-8.175-8.174L36.995 0 50 12.998l-.004.003.004.004-13.005 12.998-2.829-2.828 8.173-8.173H0z"/>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="reviews__controls slider__controls">
-            <button class="slider__control slider__control--left">prev</button>
-            <button class="slider__control slider__control--right">next</button>
-          </div>
-          <button class="btn reviews__btn">Написать</button>
+          <a class="btn reviews__btn" href="#" target="_blank">Написать</a>
         </div>
       </section>
       <section class="page-main__contacts contacts">
@@ -214,22 +222,21 @@
           </a>
         </div>
       </div>
-
-      <div class="page__modal modal">
-        <h2 class="modal__title">Добавить<br>в корзину</h2>
-        <p class="modal__invite">Выберите размер:</p>
-        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-          <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
-          <label class="modal__label" for="size-s">S</label>
-          <input class="modal__input" id="size-m" type="radio" name="size" value="m" >
-          <label class="modal__label" for="size-m">M</label>
-          <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
-          <label class="modal__label" for="size-l">L</label>
-          <button class="btn modal__btn" type="submit">Добавить</button>
-        </form>
-      </div>
-
     </footer>
+
+    <div class="page__modal modal">
+      <h2 class="modal__title">Добавить<br>в корзину</h2>
+      <p class="modal__invite">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
+        <label class="modal__label" for="size-s">S</label>
+        <input class="modal__input" id="size-m" type="radio" name="size" value="m" >
+        <label class="modal__label" for="size-m">M</label>
+        <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
+        <label class="modal__label" for="size-l">L</label>
+        <button class="btn modal__btn" type="submit">Добавить</button>
+      </form>
+    </div>
 
   </body>
 </html>
