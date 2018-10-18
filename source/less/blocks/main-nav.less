@@ -30,7 +30,6 @@
 @media (min-width: @tablet-width) {
   .main-nav__list {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .main-nav__item {
@@ -45,5 +44,30 @@
   .main-nav__item-link {
     padding: 0;
     font-size: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo {
+    margin-left: 75px;
+  }
+
+  .main-nav__item {
+    margin: 0;
+    border-right: 1px solid @header-border-color;
+
+    &:first-child {
+      margin-left: -36px;
+    }
+
+    &:last-child {
+      margin-right: -36px;
+      border: none;
+    }
+  }
+
+  .main-nav__item-link {
+    padding: 32px 36px;
+    font-size: 17px;
   }
 }
