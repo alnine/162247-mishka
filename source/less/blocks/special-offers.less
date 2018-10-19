@@ -1,0 +1,35 @@
+.special-offers {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .special-offers {
+    display: flex;
+  }
+
+  .special-offers__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .special-offers__item {
+    margin-right: 63px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .special-offers__link {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    color: @main-font-color;
+    text-decoration: none;
+  }
+}

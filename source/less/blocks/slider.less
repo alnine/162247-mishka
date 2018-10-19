@@ -1,23 +1,32 @@
 .slider__controls {
-  font-size: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 .slider__control {
-  width: 130px;
+  display: flex;
+  width: 50%;
   height: 52px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: none;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   border: 1px solid @slider-border-color;
+  cursor: pointer;
+}
 
-  &--left {
-    background-image: url("../img/icon-left-arrow.svg");
+.slider__control-icon {
+  width: 50px;
+  height: 26px;
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .slider__controls {
+    width: 175px;
   }
 
-  &--right {
-    background-image: url("../img/icon-right-arrow.svg");
+  .slider__control {
+    border: none;
   }
 }

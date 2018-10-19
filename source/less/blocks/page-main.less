@@ -1,6 +1,11 @@
+.page-main {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-main--bg {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-position: center -17px;
+  background-position: center -18px;
   background-size: auto auto;
   background-repeat: no-repeat;
   background-color: #f9f9f9;
@@ -16,68 +21,157 @@
 }
 
 .page-main__header {
-  padding-top: 70px;
-  padding-bottom: 76px;
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+
+  &--index {
+    min-height: 282px;
+  }
+
+  &--inner {
+    min-height: 176px;
+  }
+}
+
+.page-main__header-wrapper {
+  padding: 0 30px;
+
+  &--index {
+    margin-bottom: 53px;
+  }
+
+  &--inner {
+    margin-bottom: 7px;
+  }
 }
 
 .page-main__header-title {
   margin: 0;
-  padding: 0 30px;
   font-size: 27px;
   line-height: 30px;
   text-align: center;
 }
 
-.page-main__product-nav {
-  margin-top: 46px;
-}
-
 .page-main__product-nav-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .page-main__product-nav-link {
-  display: block;
-  position: relative;
-  padding-top: 27px;
-  padding-right: 115px;
-  padding-bottom: 28px;
-  padding-left: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 103px;
+  padding: 20px 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: @product-nav-font-color;
   text-decoration: none;
 
-  &--bg--seafoam-blue {
+  &--bg--interior {
     background-color: @bg-product-nav-interior;
   }
 
-  &--bg--greeny-blue {
+  &--bg--toy {
     background-color: @bg-product-nav-toy;
   }
+}
 
-  &::after {
-    content: "";
-    display: table;
-    position: absolute;
-    width: 62px;
-    height: 62px;
-    top: 50%;
-    right: 27px;
-    transform: translateY(-50%);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    opacity: 0.15;
+.page-main__product-nav-icon {
+  fill: #13907f;
+  opacity: 0.5;
+
+  &--interior {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-main--bg {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: center -1px;
   }
 
-  &--icon--interior::after {
-    background-image: url("../img/icon-interior.svg");
+  .page-main__header--index {
+    min-height: 626px;
+    padding: 75px 0;
   }
 
-  &--icon--toy::after {
-    background-image: url("../img/icon-toy.svg");
+  .page-main__header--inner {
+    min-height: 223px;
+    padding-top: 55px;
+  }
+
+  .page-main__header-wrapper {
+    padding: 0 50px;
+
+    &--index {
+      margin-bottom: 220px;
+    }
+
+    &--inner {
+      margin-bottom: 9px;
+    }
+  }
+
+  .page-main__header-title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main__product-nav-list {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+
+  .page-main__product-nav-item {
+    width: 50%;
+  }
+
+  .page-main__product-nav-link {
+    height: 119px;
+    padding: 27px 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-main__product-nav-icon--interior {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__header-wrapper {
+    padding: 0;
+
+    &--index {
+      margin-bottom: 206px;
+    }
+
+    &--inner {
+      margin-bottom: 31px;
+    }
+  }
+
+  .page-main__header--inner {
+    min-height: 251px;
+  }
+
+  .page-main__header-title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__product-nav-list {
+    padding: 0;
+  }
+
+  .page-main__product-nav-link {
+    padding: 27px 37px;
   }
 }
