@@ -13,8 +13,8 @@
         <div class="page-header__logo logo">
           <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Мишка">
         </div>
-        <button class="page-header__nav-toggle menu-toggle menu-toggle--hidden"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="page-header__main-nav main-nav">
+        <button class="page-header__nav-toggle menu-toggle menu-toggle--closed menu-toggle--no-js"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__main-nav main-nav main-nav--closed main-nav--no-js">
           <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="catalog.html">Каталог товаров</a>
@@ -24,7 +24,7 @@
             </li>
           </ul>
         </nav>
-        <nav class="page-header__service-nav service-nav">
+        <nav class="page-header__service-nav service-nav service-nav--closed service-nav--no-js">
           <ul class="service-nav__list">
             <li class="service-nav__item">
               <a class="service-nav__item-link service-nav__item-link-search" href="#">
@@ -268,6 +268,8 @@
         <button class="btn modal__btn" type="submit">Добавить</button>
       </form>
     </div>
+
+    <script src="js/mobile-menu.js"></script>
 
   </body>
 </html>

@@ -40,8 +40,18 @@
   opacity: 0.2;
 }
 
-.service-nav--hidden {
-  display: none;
+@media (max-width: @only-mobile) {
+  .service-nav--closed {
+    display: none;
+  }
+
+  .service-nav--opened {
+    display: block;
+  }
+
+  .service-nav.service-nav--no-js {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
