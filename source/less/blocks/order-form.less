@@ -77,6 +77,7 @@
 
 .order-form__input-wrapper-phone,
 .order-form__input-wrapper-email {
+  position: relative;
   margin-top: 7px;
 }
 
@@ -174,6 +175,15 @@
   border-bottom: 2px solid @input-border-color;
   outline: 0;
   background: none;
+}
+
+.order-form__item-input-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  fill: @input-icon-color;
 }
 
 .order-form__item-textarea {
@@ -309,6 +319,14 @@
       }
     }
 
+    &:hover::before {
+      border-color: @radio-border-hover;
+    }
+
+    &:active::before {
+      border-color: @radio-border-active;
+    }
+
     &--input {
       margin-right: 25px;
     }
@@ -327,10 +345,46 @@
     padding-left: 17px;
     padding-right: 17px;
     font-size: 19px;
+
+    &::placeholder {
+      color: @placeholder-font-color;
+    }
+
+    &:hover {
+      border-color: @input-border-hover;
+    }
+
+    &:focus {
+      border-color: @input-border-hover;
+    }
+  }
+
+  .order-form__item-input:hover + .order-form__item-input-icon {
+    fill: @input-icon-hover;
+  }
+
+  .order-form__item-input:focus + .order-form__item-input-icon {
+    fill: @input-icon-hover;
+  }
+
+  .order-form__item-input-icon {
+    right: 22px;
   }
 
   .order-form__item-textarea {
     font-size: 19px;
+
+    &::placeholder {
+      color: @placeholder-font-color;
+    }
+
+    &:hover {
+      border-color: @textarea-border-hover;
+    }
+
+    &:focus {
+      border-color: @textarea-border-hover;
+    }
   }
 
   .order-form__option {
@@ -393,6 +447,10 @@
 
   .order-form__item-label--checkbox {
     width: 234px;
+  }
+
+  .order-form__item-input-icon {
+    right: 5px;
   }
 
   .order-form__option {

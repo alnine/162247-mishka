@@ -67,6 +67,19 @@
   .service-nav__item-link {
     padding: 32px 30px;
     padding-right: 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:hover .service-nav__item-icon-search,
+    &:hover .service-nav__item-icon-cart {
+      fill: @service-nav-icon-hover;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .service-nav__item-link-search {
