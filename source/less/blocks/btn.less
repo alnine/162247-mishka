@@ -13,4 +13,18 @@
   background: none;
   border: 2px solid @btn-border-main-color;
   cursor: pointer;
+  outline: none;
+}
+
+@media (min-width: @tablet-width) {
+  .btn {
+    &:hover {
+      color: @btn-font-hover-color;
+      background-color: @btn-bg-hover-color;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

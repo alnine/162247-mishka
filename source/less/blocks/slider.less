@@ -13,6 +13,7 @@
   background: none;
   border: 1px solid @slider-border-color;
   cursor: pointer;
+  outline: none;
 }
 
 .slider__control-icon {
@@ -28,5 +29,13 @@
 
   .slider__control {
     border: none;
+  }
+
+  .slider__control:hover .slider__control-icon {
+    opacity: 0.6;
+  }
+
+  .slider__control:active .slider__control-icon {
+    opacity: 0.3;
   }
 }

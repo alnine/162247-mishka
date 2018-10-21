@@ -23,8 +23,18 @@
   text-align: left;
 }
 
-.main-nav--hidden {
-  display: none;
+@media (max-width: @only-mobile) {
+  .main-nav--closed {
+    display: none;
+  }
+
+  .main-nav--opened {
+    display: block;
+  }
+
+  .main-nav.main-nav--no-js {
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -44,6 +54,14 @@
   .main-nav__item-link {
     padding: 0;
     font-size: 15px;
+
+    &[href]:hover {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
   }
 }
 

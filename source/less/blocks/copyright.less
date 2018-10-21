@@ -28,5 +28,13 @@
 @media (min-width: @tablet-width) {
   .copyright {
     padding: 0;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .copyright__icon:hover {
+    fill: @copyright-logo-hover;
   }
 }
