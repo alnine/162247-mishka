@@ -135,7 +135,7 @@
           </picture>
           <div class="promo__order">
             <b class="promo__price">Цена: 990 руб.</b>
-            <a class="btn promo__btn" href="#">Заказать</a>
+            <a class="btn promo__btn js-modal" href="#">Заказать</a>
           </div>
         </div>
       </section>
@@ -278,7 +278,7 @@
     </footer>
 
     <div class="page__modal modal">
-      <h2 class="modal__title">Добавить<br>в корзину</h2>
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <p class="modal__invite">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
@@ -287,11 +287,13 @@
         <label class="modal__label" for="size-m">M</label>
         <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
         <label class="modal__label" for="size-l">L</label>
-        <button class="btn modal__btn" type="submit">Добавить</button>
+        <button class="btn modal__btn" type="submit" formtarget="_blank">Добавить</button>
       </form>
     </div>
 
-    <script src="js/mobile-menu.js"></script>
+    <div class="page__overlay"></div>
+
+    <script src="js/main.js"></script>
 
   </body>
 </html>
