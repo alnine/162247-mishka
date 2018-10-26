@@ -1,10 +1,18 @@
 .modal {
-  display: block;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 320px;
   padding: 30px 29px;
   padding-bottom: 46px;
   background-color: @bg-modal;
   border: 1px solid @modal-border-color;
+
+  &--opened {
+    display: block;
+  }
 }
 
 .modal__title {
