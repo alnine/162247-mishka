@@ -283,12 +283,14 @@
       <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <p class="modal__invite">Выберите размер:</p>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
-        <label class="modal__label" for="size-s">S</label>
-        <input class="modal__input" id="size-m" type="radio" name="size" value="m" >
-        <label class="modal__label" for="size-m">M</label>
-        <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
-        <label class="modal__label" for="size-l">L</label>
+        <div class="modal__input-group">
+          <input class="modal__input" id="size-s" type="radio" name="size" value="s" checked>
+          <label class="modal__label" for="size-s">S</label>
+          <input class="modal__input" id="size-m" type="radio" name="size" value="m" >
+          <label class="modal__label" for="size-m">M</label>
+          <input class="modal__input" id="size-l" type="radio" name="size" value="l" >
+          <label class="modal__label" for="size-l">L</label>
+        </div>
         <button class="btn modal__btn" type="submit" formtarget="_blank">Добавить</button>
       </form>
     </div>
