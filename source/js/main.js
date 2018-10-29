@@ -1,3 +1,9 @@
+//Скрипт подменяет карту на главной, если JS работает
+var contactMapImage = document.querySelector('.contacts__map-wrapper');
+
+contactMapImage.classList.remove('contacts__map-wrapper--no-js');
+
+
 // Скрипт для работы выпадающего меню на мобильных устройствах
 var navMain = document.querySelector('.main-nav');
 var serviceMain = document.querySelector('.service-nav')
