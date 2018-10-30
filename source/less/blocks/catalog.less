@@ -188,6 +188,12 @@
     margin-bottom: 54px;
   }
 
+  .catalog__item-link-img {
+    display: flex;
+    align-items: center;
+    background-color: @bg-catalog-item-img;
+  }
+
   .catalog__item-img {
     width: 334px;
     height: 334px;
@@ -287,7 +293,6 @@
   .catalog__list {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
     margin-bottom: 0;
   }
 
@@ -295,14 +300,14 @@
     flex-direction: column;
     width: 316px;
     margin-right: 50px;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
 
     &:nth-child(3n) {
       margin-right: 0;
     }
 
     &:last-child {
-      margin-bottom: 50px;
+      margin-bottom: 57px;
     }
   }
 
@@ -312,7 +317,6 @@
   }
 
   .catalog__item-info {
-    height: 197px;
     padding: 26px;
     padding-bottom: 25px;
   }
@@ -330,11 +334,12 @@
   }
 
   .catalog__item-desc {
-    margin-bottom: auto;
+    margin-bottom: 15px;
   }
 
   .catalog__item-option {
     margin: 0;
+    margin-top: auto;
     padding-top: 22px;
   }
 
@@ -343,32 +348,45 @@
   }
 
   .catalog__promo {
-    flex-direction: row;
-    align-items: flex-start;
+    position: relative;
+    padding-top: 94px;
+    padding-right: 57px;
+    padding-bottom: 60px;
+    padding-left: 761px;
+    border: 1px solid @catalog-border-color;
+  }
+
+  .catalog__promo-content-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 682px;
+    height: 100%;
+    margin: 0;
+    background-color: @bg-catalog-item-img;
+  }
+
+  .catalog__promo-content {
+    display: block;
+    height: auto;
   }
 
   .catalog__promo-title {
-    flex-basis: 230px;
-    padding-top: 95px;
-    padding-right: 58px;
-    padding-left: 78px;
-    box-sizing: content-box;
+    margin-bottom: 33px;
+    padding: 0;
+    border: none;
 
     &::before {
-      top: 57px;
-      left: 79px;
+      top: -38px;
+      left: 2px;
     }
   }
 
   .catalog__promo-info {
-    flex-basis: 230px;
-    margin-top: auto;
-    margin-left: -368px;
     padding: 0;
-    padding-right: 58px;
-    padding-left: 78px;
-    padding-bottom: 59px;
-    box-sizing: content-box;
+    border: none;
   }
 
   .catalog__promo:hover {
@@ -381,11 +399,5 @@
 
   .catalog__promo-desc {
     margin-bottom: 46px;
-  }
-
-  .catalog__promo-content-wrapper {
-    width: 682px;
-    height: 455px;
-    margin: 0;
   }
 }
